@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/damapp/src" modelPluginID="damapp" modelName="Damapp"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="8.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>damapp.ecore</foreignModel>
+  <genPackages prefix="Damapp" disposableProviderFactory="true" ecorePackage="damapp.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="damapp.ecore#//TheoricPatternType">
+      <genEnumLiterals ecoreEnumLiteral="damapp.ecore#//TheoricPatternType/Knowledge"/>
+      <genEnumLiterals ecoreEnumLiteral="damapp.ecore#//TheoricPatternType/DomainExpert"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="damapp.ecore#//DataPatternType">
+      <genEnumLiterals ecoreEnumLiteral="damapp.ecore#//DataPatternType/Dependence"/>
+      <genEnumLiterals ecoreEnumLiteral="damapp.ecore#//DataPatternType/Correlation"/>
+      <genEnumLiterals ecoreEnumLiteral="damapp.ecore#//DataPatternType/Constraint"/>
+      <genEnumLiterals ecoreEnumLiteral="damapp.ecore#//DataPatternType/Population_Synthesis"/>
+    </genEnums>
+    <genClasses ecoreClass="damapp.ecore#//DataEntity">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference damapp.ecore#//DataEntity/attributes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference damapp.ecore#//DataEntity/operations"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference damapp.ecore#//DataEntity/uses"/>
+    </genClasses>
+    <genClasses ecoreClass="damapp.ecore#//AgentEntity">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference damapp.ecore#//AgentEntity/statevariables"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference damapp.ecore#//AgentEntity/mydataentity"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference damapp.ecore#//AgentEntity/behaviors"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference damapp.ecore#//AgentEntity/interacts"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference damapp.ecore#//AgentEntity/aemydatapatterns"/>
+    </genClasses>
+    <genClasses ecoreClass="damapp.ecore#//DamappModel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference damapp.ecore#//DamappModel/agententities"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference damapp.ecore#//DamappModel/dataentities"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute damapp.ecore#//DamappModel/version"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference damapp.ecore#//DamappModel/transformations"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference damapp.ecore#//DamappModel/theoricpatterns"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference damapp.ecore#//DamappModel/datapatterns"/>
+    </genClasses>
+    <genClasses ecoreClass="damapp.ecore#//Attribute">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute damapp.ecore#//Attribute/type"/>
+    </genClasses>
+    <genClasses ecoreClass="damapp.ecore#//StateVariable">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference damapp.ecore#//StateVariable/myattribute"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute damapp.ecore#//StateVariable/type"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference damapp.ecore#//StateVariable/svmydatapatterns"/>
+    </genClasses>
+    <genClasses ecoreClass="damapp.ecore#//Transformation">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference damapp.ecore#//Transformation/transattributes"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference damapp.ecore#//Transformation/resultsv"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute damapp.ecore#//Transformation/code"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute damapp.ecore#//Transformation/type"/>
+    </genClasses>
+    <genClasses ecoreClass="damapp.ecore#//Operation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute damapp.ecore#//Operation/returnType"/>
+    </genClasses>
+    <genClasses ecoreClass="damapp.ecore#//Behavior">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference damapp.ecore#//Behavior/myoperation"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference damapp.ecore#//Behavior/mypatterns"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="damapp.ecore#//DamappEntity">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute damapp.ecore#//DamappEntity/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute damapp.ecore#//DamappEntity/description"/>
+    </genClasses>
+    <genClasses ecoreClass="damapp.ecore#//DataPattern">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute damapp.ecore#//DataPattern/type"/>
+    </genClasses>
+    <genClasses ecoreClass="damapp.ecore#//TheoricPattern">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute damapp.ecore#//TheoricPattern/type"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="damapp.ecore#//Pattern">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute damapp.ecore#//Pattern/text"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

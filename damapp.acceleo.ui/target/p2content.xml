@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='1'>
+  <unit id='damapp.acceleo.ui' version='1.0.0.201612201639'>
+    <update id='damapp.acceleo.ui' range='[0.0.0,1.0.0.201612201639)' severity='0'/>
+    <properties size='5'>
+      <property name='org.eclipse.equinox.p2.name' value='Acceleo Texts Module IDE Plug-in'/>
+      <property name='org.eclipse.equinox.p2.provider' value='Eclipse Modeling Project'/>
+      <property name='maven-groupId' value='damapp.project'/>
+      <property name='maven-artifactId' value='damapp.acceleo.ui'/>
+      <property name='maven-version' value='1.0.0-SNAPSHOT'/>
+    </properties>
+    <provides size='4'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='damapp.acceleo.ui' version='1.0.0.201612201639'/>
+      <provided namespace='osgi.bundle' name='damapp.acceleo.ui' version='1.0.0.201612201639'/>
+      <provided namespace='java.package' name='damapp.acceleo.ui.common' version='0.0.0'/>
+      <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+    </provides>
+    <requires size='10'>
+      <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='damapp.acceleo' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.emf.ecore' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.emf.ecore.xmi' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.ocl' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.ocl.ecore' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.acceleo.model' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.acceleo.engine' range='0.0.0'/>
+    </requires>
+    <artifacts size='1'>
+      <artifact classifier='osgi.bundle' id='damapp.acceleo.ui' version='1.0.0.201612201639'/>
+    </artifacts>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='1'>
+        <instruction key='manifest'>
+          Bundle-SymbolicName: damapp.acceleo.ui;singleton:=true&#xA;Bundle-Version: 1.0.0.201612201639&#xA;
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+</units>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="damapp.project"
+      label="Damapp"
+      version="1.0.0.201612201639"
+      provider-name="Laatabi et al.">
+
+   <description url="http://www.example.com/description">
+      Damapp is an SDL editor to design and link multi-agent model components to data records.
+A Gama simulation source code (gaml) and an ODD description can be generated.
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      Copyleft.
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      Feel free to modify and use this plugin.
+   </license>
+
+   <url>
+      <discovery label="Mars" url="http://download.eclipse.org/releases/mars/"/>
+      <discovery label="Sirius" url="http://download.eclipse.org/sirius/updates/releases/4.1.2/mars/"/>
+   </url>
+
+   <requires>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.emf.ecore"/>
+      <import plugin="org.eclipse.emf.ecore.xmi"/>
+      <import plugin="org.eclipse.ocl"/>
+      <import plugin="org.eclipse.ocl.ecore"/>
+      <import plugin="org.eclipse.acceleo.common" version="3.3.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.acceleo.model" version="3.3.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.acceleo.profiler" version="3.3.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.acceleo.engine" version="3.3.0" match="greaterOrEqual"/>
+      <import plugin="com.google.guava"/>
+      <import plugin="damapp" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="org.eclipse.sirius"/>
+      <import plugin="org.eclipse.sirius.common.acceleo.aql"/>
+      <import plugin="damapp.acceleo" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="damapp.acceleo.ui" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="damapp.edit" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="damapp.editor" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.emf.edit"/>
+      <import plugin="org.eclipse.emf.edit.ui"/>
+      <import plugin="org.eclipse.ui.ide"/>
+      <import plugin="org.eclipse.ui.navigator"/>
+      <import plugin="org.eclipse.ui.navigator.resources"/>
+      <import plugin="damapp.design" version="1.0.0" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="damapp"
+         download-size="62"
+         install-size="258"
+         version="1.0.0.201612201639"
+         unpack="false"/>
+
+   <plugin
+         id="damapp.acceleo"
+         download-size="23"
+         install-size="229"
+         version="1.0.0.201612201639"
+         unpack="false"/>
+
+   <plugin
+         id="damapp.acceleo.ui"
+         download-size="12"
+         install-size="16"
+         version="1.0.0.201612201639"
+         unpack="false"/>
+
+   <plugin
+         id="damapp.design"
+         download-size="19"
+         install-size="59"
+         version="1.0.0.201612201639"
+         unpack="false"/>
+
+   <plugin
+         id="damapp.edit"
+         download-size="38"
+         install-size="70"
+         version="1.0.0.201612201639"
+         unpack="false"/>
+
+   <plugin
+         id="damapp.editor"
+         download-size="61"
+         install-size="116"
+         version="1.0.0.201612201639"
+         unpack="false"/>
+
+   <plugin
+         id="damapp.plugin"
+         download-size="29"
+         install-size="225"
+         version="1.0.0.201612201639"
+         unpack="false"/>
+
+</feature>

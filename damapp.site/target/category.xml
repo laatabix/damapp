@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/damapp.project_1.0.0.qualifier.jar" id="damapp.project" version="1.0.0.qualifier">
+      <category name="damapp.category"/>
+   </feature>
+   <category-def name="damapp.category" label="Damapp"/>
+   <repository-reference location="http://download.eclipse.org/sirius/updates/releases/4.1.2/mars/" enabled="true" />
+   <repository-reference location="http://download.eclipse.org/releases/mars/" enabled="true" />
+</site>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+  <extension point="org.eclipse.sirius.componentization">
+    <component class="damapp.design.Activator"
+               id="damapp.design"
+	       name="damapp">
+    </component>
+  </extension>
+  
+  <extension point="org.eclipse.ui.commands">
+      <category id="damapp.commands.generate"
+                name="%category.name">
+      </category>
+      <command categoryId="damapp.commands.generate"
+            id="damapp.commands.GenerateAcceleo"
+            name="%command.name">
+      </command>
+   </extension>
+  
+  
+   <extension point="org.eclipse.ui.handlers">
+      <handler class= "damapp.design.ExecuteAcceleo"
+               commandId="damapp.commands.GenerateAcceleo">
+      </handler>
+   </extension>
+  
+  
+   <extension point="org.eclipse.ui.menus">
+		<menuContribution locationURI="toolbar:org.eclipse.sirius.diagram.ui.tabbar?after=additions">
+			<command commandId="damapp.commands.GenerateAcceleo"
+       			icon="img/generate.png"
+       			id="damapp.menus.GenerateCommand"
+       			mnemonic="%command.mnemonic"
+       			tooltip="%command.tooltip">
+			</command>
+		</menuContribution>
+	</extension>
+  
+  
+</plugin>
+
+ 

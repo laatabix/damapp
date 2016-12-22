@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='1'>
+  <unit id='damapp' version='1.0.0.201612201639'>
+    <update id='damapp' range='[0.0.0,1.0.0.201612201639)' severity='0'/>
+    <properties size='6'>
+      <property name='org.eclipse.equinox.p2.name' value='Damapp Platform'/>
+      <property name='org.eclipse.equinox.p2.provider' value='Laatabi et al.'/>
+      <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      <property name='maven-groupId' value='damapp.project'/>
+      <property name='maven-artifactId' value='damapp'/>
+      <property name='maven-version' value='1.0.0-SNAPSHOT'/>
+    </properties>
+    <provides size='6'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='damapp' version='1.0.0.201612201639'/>
+      <provided namespace='osgi.bundle' name='damapp' version='1.0.0.201612201639'/>
+      <provided namespace='java.package' name='damapp' version='0.0.0'/>
+      <provided namespace='java.package' name='damapp.impl' version='0.0.0'/>
+      <provided namespace='java.package' name='damapp.util' version='0.0.0'/>
+      <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+    </provides>
+    <requires size='2'>
+      <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.emf.ecore' range='0.0.0'/>
+    </requires>
+    <artifacts size='1'>
+      <artifact classifier='osgi.bundle' id='damapp' version='1.0.0.201612201639'/>
+    </artifacts>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='1'>
+        <instruction key='manifest'>
+          Bundle-SymbolicName: damapp;singleton:=true&#xA;Bundle-Version: 1.0.0.201612201639&#xA;
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+</units>

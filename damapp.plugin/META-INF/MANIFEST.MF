@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Damapp Plugin Wizard
+Bundle-SymbolicName: damapp.plugin;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: damapp.plugin.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.ui.ide,
+ org.eclipse.core.resources,
+ org.eclipse.ui.navigator,
+ org.eclipse.ui.navigator.resources,
+ damapp;bundle-version="1.0.0",
+ damapp.acceleo;bundle-version="1.0.0",
+ damapp.acceleo.ui;bundle-version="1.0.0",
+ damapp.design;bundle-version="1.0.0",
+ damapp.edit;bundle-version="1.0.0",
+ damapp.editor;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: Laatabi et al.
+Bundle-ClassPath: .

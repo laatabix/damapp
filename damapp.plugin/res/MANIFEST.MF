@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Test
+Bundle-SymbolicName: damapp.test
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: damapp;bundle-version="0.1.0",
+ damapp.acceleo;bundle-version="1.0.0",
+ damapp.acceleo.ui;bundle-version="1.0.0",
+ damapp.design;bundle-version="1.0.0",
+ damapp.edit;bundle-version="1.0.0",
+ damapp.editor;bundle-version="1.0.0"

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated damapp -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="damapp.presentation.DamappModelWizardID"
+            name="%_UI_DamappModelWizard_label"
+            class="damapp.presentation.DamappModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/DamappModelFile.gif">
+         <description>%_UI_DamappModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated damapp -->
+      <editor
+            id="damapp.presentation.DamappEditorID"
+            name="%_UI_DamappEditor_label"
+            icon="icons/full/obj16/DamappModelFile.gif"
+            extensions="damapp"
+            class="damapp.presentation.DamappEditor"
+            contributorClass="damapp.presentation.DamappActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

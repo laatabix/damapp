@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Damapp Design GUI
+Bundle-SymbolicName: damapp.design;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: damapp.design.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources,
+ org.eclipse.sirius,
+ org.eclipse.sirius.common.acceleo.aql,
+ damapp;bundle-version="1.0.0",
+ damapp.acceleo;bundle-version="1.0.0",
+ damapp.acceleo.ui;bundle-version="1.0.0",
+ damapp.edit;bundle-version="1.0.0",
+ damapp.editor;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Export-Package: damapp.design
+Bundle-Vendor: Laatabi et al.

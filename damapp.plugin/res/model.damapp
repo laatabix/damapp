@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<damapp:DamappModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:damapp="http://www.example.org/damapp" name="damapp_model" description="The purpose of the model" version="1.0.0">
+  <agententities name="AgentEntity1" mydataentity="//@dataentities.0">
+    <statevariables name="StateVar1" type="float"/>
+    <behaviors name="behavior1" mypatterns="//@datapatterns.0 //@theoricpatterns.0"/>
+  </agententities>
+  <dataentities name="DataEntity1">
+    <attributes name="attribute1" type="int"/>
+    <operations name="operation"/>
+  </dataentities>
+  <transformations name="Transformation1" transattributes="//@dataentities.0/@attributes.0" resultsv="//@agententities.0/@statevariables.0" type="Transtyping"/>
+  <theoricpatterns name="TheoricPattern1"/>
+  <datapatterns name="DataPattern1"/>
+</damapp:DamappModel>

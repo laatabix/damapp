@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="damapp" version="11.0.0.201601261200">
+  <ownedViewpoints name="damappVP" modelFileExtension="damapp">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Damapp Diagram" showOnStartup="true" domainClass="damapp.DamappModel" enablePopupBars="true">
+      <defaultLayer name="Default">
+        <nodeMappings name="Transformation" semanticCandidatesExpression="[transformations/]" domainClass="damapp.Transformation">
+          <style xsi:type="style:EllipseNodeDescription" showIcon="false" labelExpression="['&lt;&lt;' + type + '>>\n' + name/]" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="Data Pattern" semanticCandidatesExpression="[datapatterns/]" domainClass="damapp.DataPattern">
+          <style xsi:type="style:EllipseNodeDescription" borderLineStyle="dash" showIcon="false" labelExpression="['&lt;&lt;' + type + '>>\n' + name/]" iconPath="/damapp.design/img/datapattern.png" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelFormat>italic</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="Theoric Pattern" semanticCandidatesExpression="[theoricpatterns/]" domainClass="damapp.TheoricPattern">
+          <style xsi:type="style:EllipseNodeDescription" borderLineStyle="dash" showIcon="false" labelExpression="['&lt;&lt;' + type + '>>\n' + name/]" iconPath="/damapp.design/img/theoricpattern.png" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelFormat>italic</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="Agent - Data" deletionDescription="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='AgenttoData']" sourceMapping="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@containerMappings[name='Agent%20Entity']" targetMapping="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@containerMappings[name='Data%20Entity']" targetFinderExpression="[mydataentity/]">
+          <style lineStyle="dash">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+            <centerLabelStyleDescription showIcon="false" labelExpression="['mapped to'/]">
+              <labelFormat>italic</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="SV - Att" deletionDescription="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='SVartoAtt%20']" sourceMapping="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@containerMappings[name='Agent%20Entity']/@subNodeMappings[name='State%20Variable']" targetMapping="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@containerMappings[name='Data%20Entity']/@subNodeMappings[name='Attribute']" targetFinderExpression="[myattribute/]">
+          <style lineStyle="dot">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="Beh - Op" deletionDescription="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='BehtoOp']" sourceMapping="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@containerMappings[name='Agent%20Entity']/@subNodeMappings[name='Behavior']" targetMapping="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@containerMappings[name='Data%20Entity']/@subNodeMappings[name='Operation']" targetFinderExpression="[myoperation/]">
+          <style lineStyle="dot">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="Trans - Att" deletionDescription="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='TranstoAtts']" sourceMapping="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@nodeMappings[name='Transformation']" targetMapping="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@containerMappings[name='Data%20Entity']/@subNodeMappings[name='Attribute']" targetFinderExpression="[transattributes/]">
+          <style lineStyle="dot" targetArrow="NoDecoration">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="Trans - SV" deletionDescription="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='TranstoSVar']" sourceMapping="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@nodeMappings[name='Transformation']" targetMapping="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@containerMappings[name='Agent%20Entity']/@subNodeMappings[name='State%20Variable']" targetFinderExpression="[resultsv/]">
+          <style lineStyle="dot">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="Data - Data" sourceMapping="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@containerMappings[name='Data%20Entity']" targetMapping="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@containerMappings[name='Data%20Entity']" targetFinderExpression="[uses/]">
+          <style>
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+            <centerLabelStyleDescription showIcon="false" labelExpression="['uses'/]">
+              <labelFormat>italic</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="Agent - Agent" sourceMapping="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@containerMappings[name='Agent%20Entity']" targetMapping="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@containerMappings[name='Agent%20Entity']" targetFinderExpression="[interacts/]">
+          <style sourceArrow="InputArrow">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='orange']"/>
+            <centerLabelStyleDescription showIcon="false" labelExpression="['interacts'/]">
+              <labelFormat>italic</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="Beh - Pattern" deletionDescription="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='BehtoPatt']" sourceMapping="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@containerMappings[name='Agent%20Entity']/@subNodeMappings[name='Behavior']" targetMapping="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@nodeMappings[name='Data%20Pattern'] //@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@nodeMappings[name='Theoric%20Pattern']" targetFinderExpression="[mypatterns/]">
+          <style lineStyle="dot">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="Agent - DPattern" deletionDescription="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='AgentoDPatt']" sourceMapping="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@containerMappings[name='Agent%20Entity']" targetMapping="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@nodeMappings[name='Data%20Pattern']" targetFinderExpression="[aemydatapatterns/]">
+          <style lineStyle="dot">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="SV - DPattern" deletionDescription="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='SVoDPatt']" sourceMapping="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@containerMappings[name='Agent%20Entity']/@subNodeMappings[name='State%20Variable']" targetMapping="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@nodeMappings[name='Data%20Pattern']" targetFinderExpression="[svmydatapatterns/]">
+          <style lineStyle="dot">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <containerMappings name="Data Entity" semanticCandidatesExpression="[dataentities/]" domainClass="damapp.DataEntity">
+          <subNodeMappings name="Attribute" semanticCandidatesExpression="feature:attributes" domainClass="damapp.Attribute">
+            <style xsi:type="style:SquareDescription" showIcon="false" labelExpression="[name + ' : ' + type /]" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="Operation" semanticCandidatesExpression="feature:operations" domainClass="damapp.Operation">
+            <style xsi:type="style:EllipseNodeDescription" showIcon="false" labelExpression="[name + '()'/]" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="10" labelExpression="[name/]" iconPath="/damapp.design/img/data.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="Agent Entity" semanticCandidatesExpression="[agententities/]" domainClass="damapp.AgentEntity">
+          <subNodeMappings name="State Variable" semanticCandidatesExpression="feature:statevariables" domainClass="damapp.StateVariable">
+            <style xsi:type="style:SquareDescription" showIcon="false" labelExpression="[name + ' : ' + type /]" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="Behavior" semanticCandidatesExpression="feature:behaviors" domainClass="damapp.Behavior">
+            <style xsi:type="style:EllipseNodeDescription" showIcon="false" labelExpression="[name + '()'/]" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="10" labelExpression="[name/]" iconPath="/damapp.design/img/agent.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
+          </style>
+        </containerMappings>
+        <toolSections name="Data ">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Data Entity" forceRefresh="true" containerMappings="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@containerMappings[name='Data%20Entity']" iconPath="/damapp.design/img/data.png">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[container/]">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="damapp.DataEntity" referenceName="dataentities">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['New Data Entity'/]"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Attribute" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@containerMappings[name='Data%20Entity']/@subNodeMappings[name='Attribute']" iconPath="/damapp.design/img/attribute.png">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[container/]">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="damapp.Attribute" referenceName="attributes">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['New Attribute'/]"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="type" valueExpression="['type'/]"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Operation" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@containerMappings[name='Data%20Entity']/@subNodeMappings[name='Operation']" iconPath="/damapp.design/img/operation.png">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[container/]">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="damapp.Operation" referenceName="operations">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['New Operation'/]"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Data Pattern" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@nodeMappings[name='Data%20Pattern']" iconPath="/damapp.design/img/datapattern.png">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[container/]">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="damapp.DataPattern" referenceName="datapatterns">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['New Data Pattern'/]"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Data - Data" forceRefresh="true" edgeMappings="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@edgeMappings[name='Data%20-%20Data']" iconPath="/damapp.design/img/link.png">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[source/]">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="uses" valueExpression="[target/]"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+        <toolSections name="Agent">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Agent Entity" forceRefresh="true" containerMappings="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@containerMappings[name='Agent%20Entity']" iconPath="/damapp.design/img/agent.png">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[container/]">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="damapp.AgentEntity" referenceName="agententities">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['New Agent Entity'/]"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="State Var" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@containerMappings[name='Agent%20Entity']/@subNodeMappings[name='State%20Variable']" iconPath="/damapp.design/img/svariable.png">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[container/]">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="damapp.StateVariable" referenceName="statevariables">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['New State Var'/]"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="type" valueExpression="['type'/]"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Bahavior" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@containerMappings[name='Agent%20Entity']/@subNodeMappings[name='Behavior']" iconPath="/damapp.design/img/behavior.png">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[container/]">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="damapp.Behavior" referenceName="behaviors">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['New Behavior'/]"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Theoric Pattern" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@nodeMappings[name='Theoric%20Pattern']" iconPath="/damapp.design/img/theoricpattern.png">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[container/]">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="damapp.TheoricPattern" referenceName="theoricpatterns">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['New Theoric Pattern'/]"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Agent - Agent" edgeMappings="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@edgeMappings[name='Agent%20-%20Agent']" iconPath="/damapp.design/img/link.png">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[source/]">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="interacts" valueExpression="[target/]"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+        <toolSections name="Damaping">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Transformation" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@nodeMappings[name='Transformation']" iconPath="/damapp.design/img/transform.png">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[container/]">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="damapp.Transformation" referenceName="transformations">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['New Transform'/]"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Agent - Data" forceRefresh="true" edgeMappings="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@edgeMappings[name='Agent%20-%20Data']" iconPath="/damapp.design/img/link.png">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[source/]">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="mydataentity" valueExpression="[target/]"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="SVar - Att" forceRefresh="true" edgeMappings="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@edgeMappings[name='SV%20-%20Att']" iconPath="/damapp.design/img/link.png">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[source/]">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="myattribute" valueExpression="[target/]"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Beh - Op" forceRefresh="true" edgeMappings="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@edgeMappings[name='Beh%20-%20Op']" iconPath="/damapp.design/img/link.png">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[source/]">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="myoperation" valueExpression="[target/]"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Trans - Atts" forceRefresh="true" edgeMappings="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@edgeMappings[name='Trans%20-%20Att']" iconPath="/damapp.design/img/link.png">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[source/]">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="transattributes" valueExpression="[target/]"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Trans - SVar" edgeMappings="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@edgeMappings[name='Trans%20-%20SV']" iconPath="/damapp.design/img/link.png">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[source/]">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="resultsv" valueExpression="[target/]"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="AgenttoData">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[element/]">
+                <subModelOperations xsi:type="tool_1:Unset" featureName="mydataentity"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="SVartoAtt ">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[element/]">
+                <subModelOperations xsi:type="tool_1:Unset" featureName="myattribute"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="BehtoOp">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[element/]">
+                <subModelOperations xsi:type="tool_1:Unset" featureName="myoperation"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="TranstoAtts">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[element/]">
+                <subModelOperations xsi:type="tool_1:Unset" featureName="transattributes"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="TranstoSVar">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[element/]">
+                <subModelOperations xsi:type="tool_1:Unset" featureName="resultsv"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Beh - Pattern" edgeMappings="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@edgeMappings[name='Beh%20-%20Pattern']" iconPath="/damapp.design/img/link.png">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[source/]">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="mypatterns" valueExpression="[target/]"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="BehtoPatt">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[element/]">
+                <subModelOperations xsi:type="tool_1:Unset" featureName="mypatterns" elementExpression="aql:elementView.targetNode.target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Agent - DPattern" edgeMappings="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@edgeMappings[name='Agent%20-%20DPattern']" iconPath="/damapp.design/img/link.png">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[source/]">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="aemydatapatterns" valueExpression="[target/]"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="AgentoDPatt">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[element/]">
+                <subModelOperations xsi:type="tool_1:Unset" featureName="aemydatapatterns" elementExpression="aql:elementView.targetNode.target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="SV - DPattern" edgeMappings="//@ownedViewpoints[name='damappVP']/@ownedRepresentations[name='Damapp%20Diagram']/@defaultLayer/@edgeMappings[name='SV%20-%20DPattern']" iconPath="/damapp.design/img/link.png">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[source/]">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="svmydatapatterns" valueExpression="[target/]"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="SVoDPatt">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[element/]">
+                <subModelOperations xsi:type="tool_1:Unset" featureName="svmydatapatterns" elementExpression="aql:elementView.targetNode.target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+  </ownedViewpoints>
+</description:Group>
