@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <units size='2'>
-  <unit id='damapp.project.feature.group' version='1.0.0.201612201639' singleton='false'>
-    <update id='damapp.project.feature.group' range='[0.0.0,1.0.0.201612201639)' severity='0'/>
+  <unit id='damapp.project.feature.group' version='1.0.0.201701081638' singleton='false'>
+    <update id='damapp.project.feature.group' range='[0.0.0,1.0.0.201701081638)' severity='0'/>
     <properties size='8'>
       <property name='org.eclipse.equinox.p2.name' value='Damapp'/>
       <property name='org.eclipse.equinox.p2.description' value='Damapp is an SDL editor to design and link multi-agent model components to data records.&#xA;A Gama simulation source code (gaml) and an ODD description can be generated.'/>
@@ -13,7 +13,7 @@
       <property name='maven-version' value='1.0.0-SNAPSHOT'/>
     </properties>
     <provides size='1'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='damapp.project.feature.group' version='1.0.0.201612201639'/>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='damapp.project.feature.group' version='1.0.0.201701081638'/>
     </provides>
     <requires size='33'>
       <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.runtime' range='0.0.0'/>
@@ -41,14 +41,14 @@
       <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.navigator' range='0.0.0'/>
       <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.navigator.resources' range='0.0.0'/>
       <required namespace='org.eclipse.equinox.p2.iu' name='damapp.design' range='1.0.0'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='damapp' range='[1.0.0.201612201639,1.0.0.201612201639]'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='damapp.acceleo' range='[1.0.0.201612201639,1.0.0.201612201639]'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='damapp.acceleo.ui' range='[1.0.0.201612201639,1.0.0.201612201639]'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='damapp.design' range='[1.0.0.201612201639,1.0.0.201612201639]'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='damapp.edit' range='[1.0.0.201612201639,1.0.0.201612201639]'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='damapp.editor' range='[1.0.0.201612201639,1.0.0.201612201639]'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='damapp.plugin' range='[1.0.0.201612201639,1.0.0.201612201639]'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='damapp.project.feature.jar' range='[1.0.0.201612201639,1.0.0.201612201639]'>
+      <required namespace='org.eclipse.equinox.p2.iu' name='damapp' range='[1.0.0.201701081638,1.0.0.201701081638]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='damapp.acceleo' range='[1.0.0.201701081638,1.0.0.201701081638]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='damapp.acceleo.ui' range='[1.0.0.201701081638,1.0.0.201701081638]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='damapp.design' range='[1.0.0.201701081638,1.0.0.201701081638]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='damapp.edit' range='[1.0.0.201701081638,1.0.0.201701081638]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='damapp.editor' range='[1.0.0.201701081638,1.0.0.201701081638]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='damapp.plugin' range='[1.0.0.201701081638,1.0.0.201701081638]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='damapp.project.feature.jar' range='[1.0.0.201701081638,1.0.0.201701081638]'>
         <filter>
           (org.eclipse.update.install.features=true)
         </filter>
@@ -64,7 +64,7 @@
       Copyleft.
     </copyright>
   </unit>
-  <unit id='damapp.project.feature.jar' version='1.0.0.201612201639'>
+  <unit id='damapp.project.feature.jar' version='1.0.0.201701081638'>
     <properties size='7'>
       <property name='org.eclipse.equinox.p2.name' value='Damapp'/>
       <property name='org.eclipse.equinox.p2.description' value='Damapp is an SDL editor to design and link multi-agent model components to data records.&#xA;A Gama simulation source code (gaml) and an ODD description can be generated.'/>
@@ -75,15 +75,15 @@
       <property name='maven-version' value='1.0.0-SNAPSHOT'/>
     </properties>
     <provides size='3'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='damapp.project.feature.jar' version='1.0.0.201612201639'/>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='damapp.project.feature.jar' version='1.0.0.201701081638'/>
       <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
-      <provided namespace='org.eclipse.update.feature' name='damapp.project' version='1.0.0.201612201639'/>
+      <provided namespace='org.eclipse.update.feature' name='damapp.project' version='1.0.0.201701081638'/>
     </provides>
     <filter>
       (org.eclipse.update.install.features=true)
     </filter>
     <artifacts size='1'>
-      <artifact classifier='org.eclipse.update.feature' id='damapp.project' version='1.0.0.201612201639'/>
+      <artifact classifier='org.eclipse.update.feature' id='damapp.project' version='1.0.0.201701081638'/>
     </artifacts>
     <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
     <touchpointData size='1'>

@@ -203,45 +203,6 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='damapp.design' version='1.0.0.201612201639'>
-      <update id='damapp.design' range='[0.0.0,1.0.0.201612201639)' severity='0'/>
-      <properties size='5'>
-        <property name='org.eclipse.equinox.p2.name' value='Damapp Design GUI'/>
-        <property name='org.eclipse.equinox.p2.provider' value='Laatabi et al.'/>
-        <property name='maven-groupId' value='damapp.project'/>
-        <property name='maven-artifactId' value='damapp.design'/>
-        <property name='maven-version' value='1.0.0-SNAPSHOT'/>
-      </properties>
-      <provides size='4'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='damapp.design' version='1.0.0.201612201639'/>
-        <provided namespace='osgi.bundle' name='damapp.design' version='1.0.0.201612201639'/>
-        <provided namespace='java.package' name='damapp.design' version='0.0.0'/>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-      </provides>
-      <requires size='10'>
-        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.sirius' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.sirius.common.acceleo.aql' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='damapp' range='1.0.0'/>
-        <required namespace='osgi.bundle' name='damapp.acceleo' range='1.0.0'/>
-        <required namespace='osgi.bundle' name='damapp.acceleo.ui' range='1.0.0'/>
-        <required namespace='osgi.bundle' name='damapp.edit' range='1.0.0'/>
-        <required namespace='osgi.bundle' name='damapp.editor' range='1.0.0'/>
-      </requires>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='damapp.design' version='1.0.0.201612201639'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: damapp.design;singleton:=true&#xA;Bundle-Version: 1.0.0.201612201639
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
     <unit id='org.eclipse.emf.transaction' version='1.9.0.201506010221'>
       <update id='org.eclipse.emf.transaction' range='[0.0.0,1.9.0.201506010221)' severity='0'/>
       <properties size='8'>
@@ -660,6 +621,45 @@
         </instructions>
       </touchpointData>
     </unit>
+    <unit id='damapp.acceleo.ui' version='1.0.0.201701081638'>
+      <update id='damapp.acceleo.ui' range='[0.0.0,1.0.0.201701081638)' severity='0'/>
+      <properties size='5'>
+        <property name='org.eclipse.equinox.p2.name' value='Acceleo Texts Module IDE Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Eclipse Modeling Project'/>
+        <property name='maven-groupId' value='damapp.project'/>
+        <property name='maven-artifactId' value='damapp.acceleo.ui'/>
+        <property name='maven-version' value='1.0.0-SNAPSHOT'/>
+      </properties>
+      <provides size='4'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='damapp.acceleo.ui' version='1.0.0.201701081638'/>
+        <provided namespace='osgi.bundle' name='damapp.acceleo.ui' version='1.0.0.201701081638'/>
+        <provided namespace='java.package' name='damapp.acceleo.ui.common' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='10'>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='damapp.acceleo' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore.xmi' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ocl' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ocl.ecore' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.acceleo.model' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.acceleo.engine' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='damapp.acceleo.ui' version='1.0.0.201701081638'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: damapp.acceleo.ui;singleton:=true&#xA;Bundle-Version: 1.0.0.201701081638
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
     <unit id='javax.inject' version='1.0.0.v20091030' singleton='false'>
       <update id='javax.inject' range='[0.0.0,1.0.0.v20091030)' severity='0'/>
       <properties size='5'>
@@ -755,43 +755,39 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='damapp.project.feature.jar' version='1.0.0.201612201639'>
-      <properties size='7'>
-        <property name='org.eclipse.equinox.p2.name' value='Damapp'/>
-        <property name='org.eclipse.equinox.p2.description' value='Damapp is an SDL editor to design and link multi-agent model components to data records.&#xA;A Gama simulation source code (gaml) and an ODD description can be generated.'/>
-        <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
+    <unit id='damapp' version='1.0.0.201701081638'>
+      <update id='damapp' range='[0.0.0,1.0.0.201701081638)' severity='0'/>
+      <properties size='6'>
+        <property name='org.eclipse.equinox.p2.name' value='Damapp Platform'/>
         <property name='org.eclipse.equinox.p2.provider' value='Laatabi et al.'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
         <property name='maven-groupId' value='damapp.project'/>
-        <property name='maven-artifactId' value='damapp.project'/>
+        <property name='maven-artifactId' value='damapp'/>
         <property name='maven-version' value='1.0.0-SNAPSHOT'/>
       </properties>
-      <provides size='3'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='damapp.project.feature.jar' version='1.0.0.201612201639'/>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
-        <provided namespace='org.eclipse.update.feature' name='damapp.project' version='1.0.0.201612201639'/>
+      <provides size='6'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='damapp' version='1.0.0.201701081638'/>
+        <provided namespace='osgi.bundle' name='damapp' version='1.0.0.201701081638'/>
+        <provided namespace='java.package' name='damapp' version='0.0.0'/>
+        <provided namespace='java.package' name='damapp.impl' version='0.0.0'/>
+        <provided namespace='java.package' name='damapp.util' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
       </provides>
-      <filter>
-        (org.eclipse.update.install.features=true)
-      </filter>
+      <requires size='2'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore' range='0.0.0'/>
+      </requires>
       <artifacts size='1'>
-        <artifact classifier='org.eclipse.update.feature' id='damapp.project' version='1.0.0.201612201639'/>
+        <artifact classifier='osgi.bundle' id='damapp' version='1.0.0.201701081638'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
         <instructions size='1'>
-          <instruction key='zipped'>
-            true
+          <instruction key='manifest'>
+            Bundle-SymbolicName: damapp;singleton:=true&#xA;Bundle-Version: 1.0.0.201701081638
           </instruction>
         </instructions>
       </touchpointData>
-      <licenses size='1'>
-        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
-          Feel free to modify and use this plugin.
-        </license>
-      </licenses>
-      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
-        Copyleft.
-      </copyright>
     </unit>
     <unit id='org.eclipse.e4.core.di.extensions' version='0.13.0.v20150421-2214'>
       <update id='org.eclipse.e4.core.di.extensions' range='[0.0.0,0.13.0.v20150421-2214)' severity='0'/>
@@ -1037,6 +1033,44 @@
         </instructions>
       </touchpointData>
     </unit>
+    <unit id='damapp.editor' version='1.0.0.201701081638'>
+      <update id='damapp.editor' range='[0.0.0,1.0.0.201701081638)' severity='0'/>
+      <properties size='7'>
+        <property name='df_LT.pluginName' value='Damapp Editor'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Laatabi et al.'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+        <property name='maven-groupId' value='damapp.project'/>
+        <property name='maven-artifactId' value='damapp.editor'/>
+        <property name='maven-version' value='1.0.0-SNAPSHOT'/>
+      </properties>
+      <provides size='5'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='damapp.editor' version='1.0.0.201701081638'/>
+        <provided namespace='osgi.bundle' name='damapp.editor' version='1.0.0.201701081638'/>
+        <provided namespace='java.package' name='damapp.presentation' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='6'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='damapp.edit' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore.xmi' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.edit.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='damapp.editor' version='1.0.0.201701081638'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: damapp.editor;singleton:=true&#xA;Bundle-Version: 1.0.0.201701081638
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
     <unit id='org.eclipse.acceleo.model' version='3.6.3.201602090916'>
       <update id='org.eclipse.acceleo.model' range='[0.0.0,3.6.3.201602090916)' severity='0'/>
       <properties size='8'>
@@ -1163,6 +1197,46 @@
         <instructions size='1'>
           <instruction key='manifest'>
             Bundle-SymbolicName: com.google.guava&#xA;Bundle-Version: 15.0.0.v201403281430
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='damapp.acceleo' version='1.0.0.201701081638' singleton='false'>
+      <update id='damapp.acceleo' range='[0.0.0,1.0.0.201701081638)' severity='0'/>
+      <properties size='5'>
+        <property name='org.eclipse.equinox.p2.name' value='Acceleo Acceleo Module Runtime Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Eclipse Modeling Project'/>
+        <property name='maven-groupId' value='damapp.project'/>
+        <property name='maven-artifactId' value='damapp.acceleo'/>
+        <property name='maven-version' value='1.0.0-SNAPSHOT'/>
+      </properties>
+      <provides size='4'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='damapp.acceleo' version='1.0.0.201701081638'/>
+        <provided namespace='osgi.bundle' name='damapp.acceleo' version='1.0.0.201701081638'/>
+        <provided namespace='java.package' name='damapp.acceleo.main' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='11'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore.xmi' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ocl' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ocl.ecore' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.acceleo.common' range='3.3.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.acceleo.model' range='3.3.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.acceleo.profiler' range='3.3.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.acceleo.engine' range='3.3.0'/>
+        <required namespace='osgi.bundle' name='com.google.guava' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='damapp' range='1.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='damapp.acceleo' version='1.0.0.201701081638'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: damapp.acceleo&#xA;Bundle-Version: 1.0.0.201701081638
           </instruction>
         </instructions>
       </touchpointData>
@@ -1678,6 +1752,44 @@
         </instructions>
       </touchpointData>
     </unit>
+    <unit id='damapp.project.feature.jar' version='1.0.0.201701081638'>
+      <properties size='7'>
+        <property name='org.eclipse.equinox.p2.name' value='Damapp'/>
+        <property name='org.eclipse.equinox.p2.description' value='Damapp is an SDL editor to design and link multi-agent model components to data records.&#xA;A Gama simulation source code (gaml) and an ODD description can be generated.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Laatabi et al.'/>
+        <property name='maven-groupId' value='damapp.project'/>
+        <property name='maven-artifactId' value='damapp.project'/>
+        <property name='maven-version' value='1.0.0-SNAPSHOT'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='damapp.project.feature.jar' version='1.0.0.201701081638'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='damapp.project' version='1.0.0.201701081638'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='damapp.project' version='1.0.0.201701081638'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
+          Feel free to modify and use this plugin.
+        </license>
+      </licenses>
+      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
+        Copyleft.
+      </copyright>
+    </unit>
     <unit id='org.eclipse.acceleo.annotations' version='5.0.1.201610060831' singleton='false'>
       <update id='org.eclipse.acceleo.annotations' range='[0.0.0,5.0.1.201610060831)' severity='0'/>
       <properties size='8'>
@@ -1755,41 +1867,6 @@
         <instructions size='1'>
           <instruction key='manifest'>
             Bundle-SymbolicName: org.eclipse.sirius.ecore.extender;singleton:=true&#xA;Bundle-Version: 4.1.2.201612021444
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
-    <unit id='damapp.edit' version='1.0.0.201612201639'>
-      <update id='damapp.edit' range='[0.0.0,1.0.0.201612201639)' severity='0'/>
-      <properties size='7'>
-        <property name='df_LT.pluginName' value='Damapp Edit Support'/>
-        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
-        <property name='org.eclipse.equinox.p2.provider' value='Laatabi et al.'/>
-        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
-        <property name='maven-groupId' value='damapp.project'/>
-        <property name='maven-artifactId' value='damapp.edit'/>
-        <property name='maven-version' value='1.0.0-SNAPSHOT'/>
-      </properties>
-      <provides size='5'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='damapp.edit' version='1.0.0.201612201639'/>
-        <provided namespace='osgi.bundle' name='damapp.edit' version='1.0.0.201612201639'/>
-        <provided namespace='java.package' name='damapp.provider' version='0.0.0'/>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
-      </provides>
-      <requires size='3'>
-        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='damapp' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.emf.edit' range='0.0.0'/>
-      </requires>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='damapp.edit' version='1.0.0.201612201639'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: damapp.edit;singleton:=true&#xA;Bundle-Version: 1.0.0.201612201639
           </instruction>
         </instructions>
       </touchpointData>
@@ -2210,6 +2287,45 @@
         </instructions>
       </touchpointData>
     </unit>
+    <unit id='org.eclipse.sirius.ext.base' version='4.1.2.201612021444' singleton='false'>
+      <update id='org.eclipse.sirius.ext.base' range='[0.0.0,4.1.2.201612021444)' severity='0'/>
+      <properties size='8'>
+        <property name='df_LT.pluginName' value='Sirius Library Extensions - Base'/>
+        <property name='df_LT.providerName' value='Eclipse Modeling Project'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+        <property name='maven-groupId' value='org.eclipse.sirius'/>
+        <property name='maven-artifactId' value='org.eclipse.sirius.ext.base'/>
+        <property name='maven-version' value='4.1.2-SNAPSHOT'/>
+      </properties>
+      <provides size='8'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.sirius.ext.base' version='4.1.2.201612021444'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.sirius.ext.base' version='4.1.2.201612021444'/>
+        <provided namespace='java.package' name='org.eclipse.sirius.ext.base' version='2.1.0'/>
+        <provided namespace='java.package' name='org.eclipse.sirius.ext.base.cache' version='2.0.4'/>
+        <provided namespace='java.package' name='org.eclipse.sirius.ext.base.collect' version='2.0.4'/>
+        <provided namespace='java.package' name='org.eclipse.sirius.ext.base.relations' version='2.0.4'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='3'>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.common' range='2.8.0'/>
+        <required namespace='java.package' name='com.google.common.base' range='[11.0.2,16.0.0)'/>
+        <required namespace='java.package' name='com.google.common.collect' range='[11.0.2,16.0.0)'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.sirius.ext.base' version='4.1.2.201612021444'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: org.eclipse.sirius.ext.base&#xA;Bundle-Version: 4.1.2.201612021444
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
     <unit id='org.eclipse.ui.navigator.resources' version='3.5.1.v20160128-1644'>
       <update id='org.eclipse.ui.navigator.resources' range='[0.0.0,3.5.1.v20160128-1644)' severity='0'/>
       <properties size='8'>
@@ -2256,85 +2372,6 @@
         <instructions size='1'>
           <instruction key='manifest'>
             Bundle-SymbolicName: org.eclipse.ui.navigator.resources; singleton:=true&#xA;Bundle-Version: 3.5.1.v20160128-1644
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
-    <unit id='org.eclipse.sirius.ext.base' version='4.1.2.201612021444' singleton='false'>
-      <update id='org.eclipse.sirius.ext.base' range='[0.0.0,4.1.2.201612021444)' severity='0'/>
-      <properties size='8'>
-        <property name='df_LT.pluginName' value='Sirius Library Extensions - Base'/>
-        <property name='df_LT.providerName' value='Eclipse Modeling Project'/>
-        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
-        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
-        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
-        <property name='maven-groupId' value='org.eclipse.sirius'/>
-        <property name='maven-artifactId' value='org.eclipse.sirius.ext.base'/>
-        <property name='maven-version' value='4.1.2-SNAPSHOT'/>
-      </properties>
-      <provides size='8'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.sirius.ext.base' version='4.1.2.201612021444'/>
-        <provided namespace='osgi.bundle' name='org.eclipse.sirius.ext.base' version='4.1.2.201612021444'/>
-        <provided namespace='java.package' name='org.eclipse.sirius.ext.base' version='2.1.0'/>
-        <provided namespace='java.package' name='org.eclipse.sirius.ext.base.cache' version='2.0.4'/>
-        <provided namespace='java.package' name='org.eclipse.sirius.ext.base.collect' version='2.0.4'/>
-        <provided namespace='java.package' name='org.eclipse.sirius.ext.base.relations' version='2.0.4'/>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
-      </provides>
-      <requires size='3'>
-        <required namespace='osgi.bundle' name='org.eclipse.emf.common' range='2.8.0'/>
-        <required namespace='java.package' name='com.google.common.base' range='[11.0.2,16.0.0)'/>
-        <required namespace='java.package' name='com.google.common.collect' range='[11.0.2,16.0.0)'/>
-      </requires>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='org.eclipse.sirius.ext.base' version='4.1.2.201612021444'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: org.eclipse.sirius.ext.base&#xA;Bundle-Version: 4.1.2.201612021444
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
-    <unit id='damapp.plugin' version='1.0.0.201612201639'>
-      <update id='damapp.plugin' range='[0.0.0,1.0.0.201612201639)' severity='0'/>
-      <properties size='5'>
-        <property name='org.eclipse.equinox.p2.name' value='Damapp Plugin Wizard'/>
-        <property name='org.eclipse.equinox.p2.provider' value='Laatabi et al.'/>
-        <property name='maven-groupId' value='damapp.project'/>
-        <property name='maven-artifactId' value='damapp.plugin'/>
-        <property name='maven-version' value='1.0.0-SNAPSHOT'/>
-      </properties>
-      <provides size='3'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='damapp.plugin' version='1.0.0.201612201639'/>
-        <provided namespace='osgi.bundle' name='damapp.plugin' version='1.0.0.201612201639'/>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-      </provides>
-      <requires size='12'>
-        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.ui.navigator' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.ui.navigator.resources' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='damapp' range='1.0.0'/>
-        <required namespace='osgi.bundle' name='damapp.acceleo' range='1.0.0'/>
-        <required namespace='osgi.bundle' name='damapp.acceleo.ui' range='1.0.0'/>
-        <required namespace='osgi.bundle' name='damapp.design' range='1.0.0'/>
-        <required namespace='osgi.bundle' name='damapp.edit' range='1.0.0'/>
-        <required namespace='osgi.bundle' name='damapp.editor' range='1.0.0'/>
-      </requires>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='damapp.plugin' version='1.0.0.201612201639'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: damapp.plugin;singleton:=true&#xA;Bundle-Version: 1.0.0.201612201639
           </instruction>
         </instructions>
       </touchpointData>
@@ -2459,6 +2496,70 @@
         </instructions>
       </touchpointData>
     </unit>
+    <unit id='damapp.project.feature.group' version='1.0.0.201701081638' singleton='false'>
+      <update id='damapp.project.feature.group' range='[0.0.0,1.0.0.201701081638)' severity='0'/>
+      <properties size='8'>
+        <property name='org.eclipse.equinox.p2.name' value='Damapp'/>
+        <property name='org.eclipse.equinox.p2.description' value='Damapp is an SDL editor to design and link multi-agent model components to data records.&#xA;A Gama simulation source code (gaml) and an ODD description can be generated.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Laatabi et al.'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+        <property name='maven-groupId' value='damapp.project'/>
+        <property name='maven-artifactId' value='damapp.project'/>
+        <property name='maven-version' value='1.0.0-SNAPSHOT'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='damapp.project.feature.group' version='1.0.0.201701081638'/>
+      </provides>
+      <requires size='33'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.emf.ecore' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.emf.ecore.xmi' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ocl' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ocl.ecore' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.acceleo.common' range='3.3.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.acceleo.model' range='3.3.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.acceleo.profiler' range='3.3.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.acceleo.engine' range='3.3.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.google.guava' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='damapp' range='1.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.sirius' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.sirius.common.acceleo.aql' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='damapp.acceleo' range='1.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='damapp.acceleo.ui' range='1.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='damapp.edit' range='1.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='damapp.editor' range='1.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.emf.edit' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.emf.edit.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.ide' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.navigator' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.navigator.resources' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='damapp.design' range='1.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='damapp' range='[1.0.0.201701081638,1.0.0.201701081638]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='damapp.acceleo' range='[1.0.0.201701081638,1.0.0.201701081638]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='damapp.acceleo.ui' range='[1.0.0.201701081638,1.0.0.201701081638]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='damapp.design' range='[1.0.0.201701081638,1.0.0.201701081638]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='damapp.edit' range='[1.0.0.201701081638,1.0.0.201701081638]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='damapp.editor' range='[1.0.0.201701081638,1.0.0.201701081638]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='damapp.plugin' range='[1.0.0.201701081638,1.0.0.201701081638]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='damapp.project.feature.jar' range='[1.0.0.201701081638,1.0.0.201701081638]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
+          Feel free to modify and use this plugin.
+        </license>
+      </licenses>
+      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
+        Copyleft.
+      </copyright>
+    </unit>
     <unit id='org.eclipse.ui.navigator' version='3.6.0.v20150422-0725'>
       <update id='org.eclipse.ui.navigator' range='[0.0.0,3.6.0.v20150422-0725)' severity='0'/>
       <properties size='8'>
@@ -2543,46 +2644,6 @@
         <instructions size='1'>
           <instruction key='manifest'>
             Bundle-SymbolicName: org.eclipse.core.databinding.property&#xA;Bundle-Version: 1.5.0.v20150422-0725
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
-    <unit id='damapp.acceleo' version='1.0.0.201612201639' singleton='false'>
-      <update id='damapp.acceleo' range='[0.0.0,1.0.0.201612201639)' severity='0'/>
-      <properties size='5'>
-        <property name='org.eclipse.equinox.p2.name' value='Acceleo Acceleo Module Runtime Plug-in'/>
-        <property name='org.eclipse.equinox.p2.provider' value='Eclipse Modeling Project'/>
-        <property name='maven-groupId' value='damapp.project'/>
-        <property name='maven-artifactId' value='damapp.acceleo'/>
-        <property name='maven-version' value='1.0.0-SNAPSHOT'/>
-      </properties>
-      <provides size='4'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='damapp.acceleo' version='1.0.0.201612201639'/>
-        <provided namespace='osgi.bundle' name='damapp.acceleo' version='1.0.0.201612201639'/>
-        <provided namespace='java.package' name='damapp.acceleo.main' version='0.0.0'/>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-      </provides>
-      <requires size='11'>
-        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore.xmi' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.ocl' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.ocl.ecore' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.acceleo.common' range='3.3.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.acceleo.model' range='3.3.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.acceleo.profiler' range='3.3.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.acceleo.engine' range='3.3.0'/>
-        <required namespace='osgi.bundle' name='com.google.guava' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='damapp' range='1.0.0'/>
-      </requires>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='damapp.acceleo' version='1.0.0.201612201639'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: damapp.acceleo&#xA;Bundle-Version: 1.0.0.201612201639
           </instruction>
         </instructions>
       </touchpointData>
@@ -2770,6 +2831,46 @@
         <instructions size='1'>
           <instruction key='manifest'>
             Bundle-SymbolicName: org.eclipse.core.databinding.observable&#xA;Bundle-Version: 1.5.0.v20150422-0725
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='damapp.plugin' version='1.0.0.201701081638'>
+      <update id='damapp.plugin' range='[0.0.0,1.0.0.201701081638)' severity='0'/>
+      <properties size='5'>
+        <property name='org.eclipse.equinox.p2.name' value='Damapp Plugin Wizard'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Laatabi et al.'/>
+        <property name='maven-groupId' value='damapp.project'/>
+        <property name='maven-artifactId' value='damapp.plugin'/>
+        <property name='maven-version' value='1.0.0-SNAPSHOT'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='damapp.plugin' version='1.0.0.201701081638'/>
+        <provided namespace='osgi.bundle' name='damapp.plugin' version='1.0.0.201701081638'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='12'>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.navigator' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.navigator.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='damapp' range='1.0.0'/>
+        <required namespace='osgi.bundle' name='damapp.acceleo' range='1.0.0'/>
+        <required namespace='osgi.bundle' name='damapp.acceleo.ui' range='1.0.0'/>
+        <required namespace='osgi.bundle' name='damapp.design' range='1.0.0'/>
+        <required namespace='osgi.bundle' name='damapp.edit' range='1.0.0'/>
+        <required namespace='osgi.bundle' name='damapp.editor' range='1.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='damapp.plugin' version='1.0.0.201701081638'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: damapp.plugin;singleton:=true&#xA;Bundle-Version: 1.0.0.201701081638
           </instruction>
         </instructions>
       </touchpointData>
@@ -3429,45 +3530,6 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='damapp.acceleo.ui' version='1.0.0.201612201639'>
-      <update id='damapp.acceleo.ui' range='[0.0.0,1.0.0.201612201639)' severity='0'/>
-      <properties size='5'>
-        <property name='org.eclipse.equinox.p2.name' value='Acceleo Texts Module IDE Plug-in'/>
-        <property name='org.eclipse.equinox.p2.provider' value='Eclipse Modeling Project'/>
-        <property name='maven-groupId' value='damapp.project'/>
-        <property name='maven-artifactId' value='damapp.acceleo.ui'/>
-        <property name='maven-version' value='1.0.0-SNAPSHOT'/>
-      </properties>
-      <provides size='4'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='damapp.acceleo.ui' version='1.0.0.201612201639'/>
-        <provided namespace='osgi.bundle' name='damapp.acceleo.ui' version='1.0.0.201612201639'/>
-        <provided namespace='java.package' name='damapp.acceleo.ui.common' version='0.0.0'/>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-      </provides>
-      <requires size='10'>
-        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='damapp.acceleo' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore.xmi' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.ocl' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.ocl.ecore' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.acceleo.model' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.acceleo.engine' range='0.0.0'/>
-      </requires>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='damapp.acceleo.ui' version='1.0.0.201612201639'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: damapp.acceleo.ui;singleton:=true&#xA;Bundle-Version: 1.0.0.201612201639
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
     <unit id='org.w3c.dom.svg' version='1.1.0.v201011041433' singleton='false'>
       <update id='org.w3c.dom.svg' range='[0.0.0,1.1.0.v201011041433)' severity='0'/>
       <properties size='5'>
@@ -3803,44 +3865,6 @@
         <instructions size='1'>
           <instruction key='install'>
 
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
-    <unit id='damapp.editor' version='1.0.0.201612201639'>
-      <update id='damapp.editor' range='[0.0.0,1.0.0.201612201639)' severity='0'/>
-      <properties size='7'>
-        <property name='df_LT.pluginName' value='Damapp Editor'/>
-        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
-        <property name='org.eclipse.equinox.p2.provider' value='Laatabi et al.'/>
-        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
-        <property name='maven-groupId' value='damapp.project'/>
-        <property name='maven-artifactId' value='damapp.editor'/>
-        <property name='maven-version' value='1.0.0-SNAPSHOT'/>
-      </properties>
-      <provides size='5'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='damapp.editor' version='1.0.0.201612201639'/>
-        <provided namespace='osgi.bundle' name='damapp.editor' version='1.0.0.201612201639'/>
-        <provided namespace='java.package' name='damapp.presentation' version='0.0.0'/>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
-      </provides>
-      <requires size='6'>
-        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='damapp.edit' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore.xmi' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.emf.edit.ui' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='0.0.0'/>
-      </requires>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='damapp.editor' version='1.0.0.201612201639'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: damapp.editor;singleton:=true&#xA;Bundle-Version: 1.0.0.201612201639
           </instruction>
         </instructions>
       </touchpointData>
@@ -4390,70 +4414,6 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='damapp.project.feature.group' version='1.0.0.201612201639' singleton='false'>
-      <update id='damapp.project.feature.group' range='[0.0.0,1.0.0.201612201639)' severity='0'/>
-      <properties size='8'>
-        <property name='org.eclipse.equinox.p2.name' value='Damapp'/>
-        <property name='org.eclipse.equinox.p2.description' value='Damapp is an SDL editor to design and link multi-agent model components to data records.&#xA;A Gama simulation source code (gaml) and an ODD description can be generated.'/>
-        <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
-        <property name='org.eclipse.equinox.p2.provider' value='Laatabi et al.'/>
-        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
-        <property name='maven-groupId' value='damapp.project'/>
-        <property name='maven-artifactId' value='damapp.project'/>
-        <property name='maven-version' value='1.0.0-SNAPSHOT'/>
-      </properties>
-      <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='damapp.project.feature.group' version='1.0.0.201612201639'/>
-      </provides>
-      <requires size='33'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.runtime' range='0.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.emf.ecore' range='0.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.emf.ecore.xmi' range='0.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ocl' range='0.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ocl.ecore' range='0.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.acceleo.common' range='3.3.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.acceleo.model' range='3.3.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.acceleo.profiler' range='3.3.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.acceleo.engine' range='3.3.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.google.guava' range='0.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='damapp' range='1.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui' range='0.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.resources' range='0.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.sirius' range='0.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.sirius.common.acceleo.aql' range='0.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='damapp.acceleo' range='1.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='damapp.acceleo.ui' range='1.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='damapp.edit' range='1.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='damapp.editor' range='1.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.emf.edit' range='0.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.emf.edit.ui' range='0.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.ide' range='0.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.navigator' range='0.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.navigator.resources' range='0.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='damapp.design' range='1.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='damapp' range='[1.0.0.201612201639,1.0.0.201612201639]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='damapp.acceleo' range='[1.0.0.201612201639,1.0.0.201612201639]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='damapp.acceleo.ui' range='[1.0.0.201612201639,1.0.0.201612201639]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='damapp.design' range='[1.0.0.201612201639,1.0.0.201612201639]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='damapp.edit' range='[1.0.0.201612201639,1.0.0.201612201639]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='damapp.editor' range='[1.0.0.201612201639,1.0.0.201612201639]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='damapp.plugin' range='[1.0.0.201612201639,1.0.0.201612201639]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='damapp.project.feature.jar' range='[1.0.0.201612201639,1.0.0.201612201639]'>
-          <filter>
-            (org.eclipse.update.install.features=true)
-          </filter>
-        </required>
-      </requires>
-      <touchpoint id='null' version='0.0.0'/>
-      <licenses size='1'>
-        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
-          Feel free to modify and use this plugin.
-        </license>
-      </licenses>
-      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
-        Copyleft.
-      </copyright>
-    </unit>
     <unit id='org.eclipse.e4.emf.xpath' version='0.1.100.v20150513-0856' singleton='false'>
       <update id='org.eclipse.e4.emf.xpath' range='[0.0.0,0.1.100.v20150513-0856)' severity='0'/>
       <properties size='7'>
@@ -4524,6 +4484,45 @@
         <instructions size='1'>
           <instruction key='manifest'>
             Bundle-SymbolicName: org.eclipse.emf.common;singleton:=true&#xA;Bundle-Version: 2.11.1.v20160208-0816
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='damapp.design' version='1.0.0.201701081638'>
+      <update id='damapp.design' range='[0.0.0,1.0.0.201701081638)' severity='0'/>
+      <properties size='5'>
+        <property name='org.eclipse.equinox.p2.name' value='Damapp Design GUI'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Laatabi et al.'/>
+        <property name='maven-groupId' value='damapp.project'/>
+        <property name='maven-artifactId' value='damapp.design'/>
+        <property name='maven-version' value='1.0.0-SNAPSHOT'/>
+      </properties>
+      <provides size='4'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='damapp.design' version='1.0.0.201701081638'/>
+        <provided namespace='osgi.bundle' name='damapp.design' version='1.0.0.201701081638'/>
+        <provided namespace='java.package' name='damapp.design' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='10'>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.sirius' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.sirius.common.acceleo.aql' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='damapp' range='1.0.0'/>
+        <required namespace='osgi.bundle' name='damapp.acceleo' range='1.0.0'/>
+        <required namespace='osgi.bundle' name='damapp.acceleo.ui' range='1.0.0'/>
+        <required namespace='osgi.bundle' name='damapp.edit' range='1.0.0'/>
+        <required namespace='osgi.bundle' name='damapp.editor' range='1.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='damapp.design' version='1.0.0.201701081638'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: damapp.design;singleton:=true&#xA;Bundle-Version: 1.0.0.201701081638
           </instruction>
         </instructions>
       </touchpointData>
@@ -5168,6 +5167,41 @@
         </instructions>
       </touchpointData>
     </unit>
+    <unit id='damapp.edit' version='1.0.0.201701081638'>
+      <update id='damapp.edit' range='[0.0.0,1.0.0.201701081638)' severity='0'/>
+      <properties size='7'>
+        <property name='df_LT.pluginName' value='Damapp Edit Support'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Laatabi et al.'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+        <property name='maven-groupId' value='damapp.project'/>
+        <property name='maven-artifactId' value='damapp.edit'/>
+        <property name='maven-version' value='1.0.0-SNAPSHOT'/>
+      </properties>
+      <provides size='5'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='damapp.edit' version='1.0.0.201701081638'/>
+        <provided namespace='osgi.bundle' name='damapp.edit' version='1.0.0.201701081638'/>
+        <provided namespace='java.package' name='damapp.provider' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='3'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='damapp' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.edit' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='damapp.edit' version='1.0.0.201701081638'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: damapp.edit;singleton:=true&#xA;Bundle-Version: 1.0.0.201701081638
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
     <unit id='org.eclipse.emf.edit' version='2.11.1.v20160208-0841'>
       <update id='org.eclipse.emf.edit' range='[0.0.0,2.11.1.v20160208-0841)' severity='0'/>
       <properties size='6'>
@@ -5763,40 +5797,6 @@
         <instructions size='1'>
           <instruction key='manifest'>
             Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench;singleton:=true&#xA;Bundle-Version: 1.1.100.v20150407-1430
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
-    <unit id='damapp' version='1.0.0.201612201639'>
-      <update id='damapp' range='[0.0.0,1.0.0.201612201639)' severity='0'/>
-      <properties size='6'>
-        <property name='org.eclipse.equinox.p2.name' value='Damapp Platform'/>
-        <property name='org.eclipse.equinox.p2.provider' value='Laatabi et al.'/>
-        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
-        <property name='maven-groupId' value='damapp.project'/>
-        <property name='maven-artifactId' value='damapp'/>
-        <property name='maven-version' value='1.0.0-SNAPSHOT'/>
-      </properties>
-      <provides size='6'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='damapp' version='1.0.0.201612201639'/>
-        <provided namespace='osgi.bundle' name='damapp' version='1.0.0.201612201639'/>
-        <provided namespace='java.package' name='damapp' version='0.0.0'/>
-        <provided namespace='java.package' name='damapp.impl' version='0.0.0'/>
-        <provided namespace='java.package' name='damapp.util' version='0.0.0'/>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-      </provides>
-      <requires size='2'>
-        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore' range='0.0.0'/>
-      </requires>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='damapp' version='1.0.0.201612201639'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: damapp;singleton:=true&#xA;Bundle-Version: 1.0.0.201612201639
           </instruction>
         </instructions>
       </touchpointData>

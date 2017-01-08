@@ -7,7 +7,7 @@ Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.co
 Bundle-Vendor: Eclipse Modeling Project
 Eclipse-LazyStart: true
 Bundle-ActivationPolicy: lazy
-Bundle-Version: 1.0.0.201612201639
+Bundle-Version: 1.0.0.201701081638
 Bundle-Name: Acceleo Texts Module IDE Plug-in
 Bundle-Activator: damapp.acceleo.ui.Activator
 Bundle-ManifestVersion: 2

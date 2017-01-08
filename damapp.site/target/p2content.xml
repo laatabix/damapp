@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <units size='1'>
-  <unit id='201612201639.damapp.category' version='1.0.0.2--ceJyo-7735E57735E9K'>
+  <unit id='201701081638.damapp.category' version='1.0.0.2--ceJyo-7735G353I5E9I'>
     <properties size='2'>
       <property name='org.eclipse.equinox.p2.name' value='Damapp'/>
       <property name='org.eclipse.equinox.p2.type.category' value='true'/>
     </properties>
     <provides size='1'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='201612201639.damapp.category' version='1.0.0.2--ceJyo-7735E57735E9K'/>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='201701081638.damapp.category' version='1.0.0.2--ceJyo-7735G353I5E9I'/>
     </provides>
     <requires size='1'>
-      <required namespace='org.eclipse.equinox.p2.iu' name='damapp.project.feature.group' range='[1.0.0.201612201639,1.0.0.201612201639]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='damapp.project.feature.group' range='[1.0.0.201701081638,1.0.0.201701081638]'/>
     </requires>
     <touchpoint id='null' version='0.0.0'/>
   </unit>
