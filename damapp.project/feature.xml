@@ -21,6 +21,7 @@ A Gama simulation source code (gaml) and an ODD description can be generated.
    <url>
       <discovery label="Mars" url="http://download.eclipse.org/releases/mars/"/>
       <discovery label="Sirius" url="http://download.eclipse.org/sirius/updates/releases/4.1.2/mars/"/>
+      <discovery label="Ocl" url="http://download.eclipse.org/modeling/mdt/ocl/updates/releases/6.0.1"/>
    </url>
 
    <requires>

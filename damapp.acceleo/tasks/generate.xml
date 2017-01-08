@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project default="generate" name="damapp.acceleo">
-    <property name="ECLIPSE_HOME" value="../../../../../../Applications/ObeoDesigner-Community 13-11-27-905.app/Contents/Eclipse"/>
-    <property name="ECLIPSE_WORKSPACE" value="../.."/>
+    <property name="ECLIPSE_HOME" value="../../../../../Applications/ObeoDesigner-Community 13-11-27-905.app/Contents/Eclipse"/>
+    <property name="ECLIPSE_WORKSPACE" value="../../../Desktop/ObeoDesignerWorkspace"/>
 
     <!-- The classpath with only the dependencies used by the project -->
     <path id="damapp.acceleo.libraryclasspath">

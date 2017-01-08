@@ -2,7 +2,7 @@
 <feature
       id="damapp.project"
       label="Damapp"
-      version="1.0.0.201612201639"
+      version="1.0.0.201701081638"
       provider-name="Laatabi et al.">
 
    <description url="http://www.example.com/description">
@@ -21,6 +21,7 @@ A Gama simulation source code (gaml) and an ODD description can be generated.
    <url>
       <discovery label="Mars" url="http://download.eclipse.org/releases/mars/"/>
       <discovery label="Sirius" url="http://download.eclipse.org/sirius/updates/releases/4.1.2/mars/"/>
+      <discovery label="Ocl" url="http://download.eclipse.org/modeling/mdt/ocl/updates/releases/6.0.1"/>
    </url>
 
    <requires>
@@ -55,49 +56,49 @@ A Gama simulation source code (gaml) and an ODD description can be generated.
          id="damapp"
          download-size="62"
          install-size="258"
-         version="1.0.0.201612201639"
+         version="1.0.0.201701081638"
          unpack="false"/>
 
    <plugin
          id="damapp.acceleo"
          download-size="23"
          install-size="229"
-         version="1.0.0.201612201639"
+         version="1.0.0.201701081638"
          unpack="false"/>
 
    <plugin
          id="damapp.acceleo.ui"
          download-size="12"
          install-size="16"
-         version="1.0.0.201612201639"
+         version="1.0.0.201701081638"
          unpack="false"/>
 
    <plugin
          id="damapp.design"
          download-size="19"
          install-size="59"
-         version="1.0.0.201612201639"
+         version="1.0.0.201701081638"
          unpack="false"/>
 
    <plugin
          id="damapp.edit"
          download-size="38"
          install-size="70"
-         version="1.0.0.201612201639"
+         version="1.0.0.201701081638"
          unpack="false"/>
 
    <plugin
          id="damapp.editor"
          download-size="61"
          install-size="116"
-         version="1.0.0.201612201639"
+         version="1.0.0.201701081638"
          unpack="false"/>
 
    <plugin
          id="damapp.plugin"
          download-size="29"
          install-size="225"
-         version="1.0.0.201612201639"
+         version="1.0.0.201701081638"
          unpack="false"/>
 
 </feature>

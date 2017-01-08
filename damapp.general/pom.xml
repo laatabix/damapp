@@ -11,10 +11,35 @@
  </properties>
   
   <repositories>
+  
+  <repository>
+		<id>sonatype-nexus-snapshots</id>
+		<name>Sonatype Nexus Snapshots</name>
+		<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		<releases>
+			<enabled>true</enabled>
+		</releases>
+		<snapshots>
+			<enabled>true</enabled>
+		</snapshots>
+	</repository>
+  
   <repository>
    <id>Mars</id>
    <layout>p2</layout>
    <url>http://download.eclipse.org/releases/mars/</url>
+  </repository>
+  
+    <repository>
+		<id>eclipse-elk</id>
+		<url>http://build.eclipse.org/modeling/elk/updates/nightly/</url>
+		<layout>p2</layout>
+	</repository>
+	
+  <repository>
+  <id>ocl</id>
+   <layout>p2</layout>
+   <url>http://download.eclipse.org/modeling/mdt/ocl/updates/releases/6.0.1</url>
   </repository>
   
    <repository>
@@ -22,6 +47,20 @@
    <layout>p2</layout>
    <url>http://download.eclipse.org/sirius/updates/releases/4.1.2/mars/</url>
   </repository>
+  
+	<repository>
+		<id>gama</id>
+		<name>GAMA Snapshots</name>
+		<url>http://vps226121.ovh.net/updates/</url>
+		<layout>p2</layout>
+		<releases>
+			<enabled>true</enabled>
+		</releases>
+		<snapshots>
+			<enabled>true</enabled>
+		</snapshots>
+	</repository>
+  
  </repositories>
 
  <build>
